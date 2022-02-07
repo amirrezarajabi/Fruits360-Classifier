@@ -9,7 +9,7 @@ Computational Intelligence Projects
 
 [Inverted_Pendulum](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Inverted_Pendulum): Use fuzzy logic to hold the pendulum high
 
-[FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/FCM) : use fuzzy c-mean algorithm to clustring data
+[FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean) : use fuzzy c-mean algorithm to clustring data ([data1.png](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean/pic/data1.png))
 
 ## [Neural Networks](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects)
 [Fruit](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects/Fruit): use NN for fruit recognition
