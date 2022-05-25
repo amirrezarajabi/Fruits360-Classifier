@@ -13,3 +13,10 @@ Computational Intelligence Projects
 
 ## [Neural Networks](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects)
 [Fruit](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects/Fruit): use NN for fruit recognition
+
+## [Clustring](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring)
+[hierarchical](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring/hierarchical-clustering): use hierarchical-clustering for clustring
+![example](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring/hierarchical-clustering/pic/run.png)
+
+[FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean) : use fuzzy c-mean algorithm to clustring data
+![data1](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean/pic/data1.png)

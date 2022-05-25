@@ -2,6 +2,8 @@
 
 from PIL import Image           # for opening images
 import numpy as np              # for arrays
+import matplotlib.pyplot as plt
+import sys
 
 #fuzzy membership dixtionary
 
@@ -33,7 +35,7 @@ FUZZY_RULES = [
 ]
 
 # get name
-PATH = input("Enter image name: ")
+PATH = sys.argv[1]
 
 # load image
 pic = Image.open(PATH)
@@ -50,6 +52,8 @@ if (GRAY):
 else:
     gray = np.dot(img[...,:3], [0.299, 0.587, 0.114])
 
+plt.imshow(gray, cmap="gray")
+plt.show()
 
 # blong fuzzy
 def find_y(X1, X2, x):
@@ -120,11 +124,19 @@ def center_of_mass(SET, RESULT, N):
         x += STEP
     return sum_belong_multiply_x / sum_belong
 
+def convert_color(c):
+    clr = int((c + 128.0) / 256)
+    return (1 - clr) * 255
+
+
+print(f"shape: ({new_img.shape[0]}, {new_img.shape[1]})")
+
 for i in range(new_img.shape[0]):
     for j in range(new_img.shape[1]):
         splitted = split_pic(gray, i, j).flatten()
         value = fuzzy(FUZZY_RULES, splitted)
-        new_img[i][j] = center_of_mass(PIXEL, value, 512)
+        new_img[i, j] = (center_of_mass(PIXEL, value, 256))
+
 
 im = Image.fromarray(new_img)
 im.save("EDGE-"+PATH)
