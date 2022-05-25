@@ -16,8 +16,9 @@ Computational Intelligence Projects
 
 ## [Clustring](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring)
 [hierarchical](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring/hierarchical-clustering): use hierarchical-clustering for clustring
+
 ![example](Clustring/hierarchical-clustering/pic/run.png)
 
 [FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean) : use fuzzy c-mean algorithm to clustring data
 
-![data1](Fuzzy-Projects/Fuzzy-CMean/pic/data1.png)
+![example](Fuzzy-Projects/Fuzzy-CMean/pic/data1.png)
