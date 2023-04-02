@@ -1,24 +1,15 @@
-# Computational-Intelligence
-Computational Intelligence Projects
+# Fruit-360-classification
+In this project, a fully connected Artificial Neural Network(ANN) is implemented from scratch.
 
-## [Evolutionary Algorithms](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Evolutionary-Projects)
-[SnailJumper](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Evolutionary-Projects/SnailJumper) : use EA && NN to help the character to cross the obstacles Obstacles include flies and snail
+## Neural network architecture and details
+This ANN was implemented to classify 4 classes of fruits. Feedforward algorithm was implemented in vectorized form using softmax as activation function for each layer. Back propagation was implemented in both *iterative* and *vectorized* forms with *sum of squared errors (SSE)* as cost function. *Stochastic Gradient Descent* algorithm was used to train the network.
 
-## [Fuzzy](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects)
-[Edge-Detection](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Edge-Detection) : detect edge usie fuzzy logic (more info in [paper.pdf](https://github.com/amirrezarajabi/computational-intelligence/blob/main/Fuzzy-Projects/Edge-Detection/paper.pdf))
+![ANN](./network.JPG)
 
-[Inverted_Pendulum](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Inverted_Pendulum): Use fuzzy logic to hold the pendulum high
-
-[FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean) : use fuzzy c-mean algorithm to clustring data ([data1.png](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean/pic/data1.png))
-
-## [Neural Networks](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects)
-[Fruit](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Neural-Network-Projects/Fruit): use NN for fruit recognition
-
-## [Clustring](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring)
-[hierarchical](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Clustring/hierarchical-clustering): use hierarchical-clustering for clustring
-
-![example](Clustring/hierarchical-clustering/pic/run.png)
-
-[FCM](https://github.com/amirrezarajabi/computational-intelligence/tree/main/Fuzzy-Projects/Fuzzy-CMean) : use fuzzy c-mean algorithm to clustring data
-
-![example](Fuzzy-Projects/Fuzzy-CMean/pic/data1.png)
+### Additional parts included:
+- Hyperparameter tuning 
+- Improving SGD using momentum algorithm in this [file](./ANN_Project/ANN_momentum.py)
+- Adding more classes of fruits and hyperparameter tuning in [More Fruits](./MoreFruit/)
+- Using softmax as output layer's activation function in this [file](./ANN_Project/ANN_Extra4.py)
+## Dataset
+* The [Kaggle 360-Fruits dataset](https://www.kaggle.com/moltean/fruits) was used.
